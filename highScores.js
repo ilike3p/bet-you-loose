@@ -1,5 +1,5 @@
 
-
+//Historical High Scores
 
 // Declared variables
 var highScore = document.querySelector("#highScore");
@@ -25,7 +25,7 @@ if (allScores !== null)
 
     }
 // Event listenter to go to index pg
-goBack.addEventListener("click", function ( {
-    window.location.replace("./index.html")
+goBack.addEventListener("click", function () {
+       window.location.replace("index.html")
 
 });

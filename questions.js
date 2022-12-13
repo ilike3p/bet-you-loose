@@ -59,12 +59,10 @@ timer.addEventListener("click", function () {
 });
 
 // Renders questions and choices on page: 
-function render(questionIndex)  
-    
-// Clears existing data 
+function render(questionIndex) {
+    // Clears existing data 
     questionsDiv.innerHTML = "";
     ulCreate.innerHTML = "";
-   
     // For loops to loop through all info in array
     for (var i = 0; i < questions.length; i++) {
         // Appends question title only
@@ -72,7 +70,7 @@ function render(questionIndex)
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
     }
-    // Next question choice
+    // New for each for question choices
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
@@ -80,6 +78,7 @@ function render(questionIndex)
         ulCreate.appendChild(listItem);
         listItem.addEventListener("click", (compare));
     })
+}
     // Event to compare choices with answer
 function compare(event) {
     var element = event.target;
@@ -188,7 +187,7 @@ function allDone() {
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
             // link to final page
-            window.location.replace("./highScores.html");
+            window.location.replace("")
         }
     });
 
