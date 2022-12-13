@@ -39,7 +39,7 @@ function render(questionIndex) {
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
     }
-    // Next question choices
+    // Next question choice
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
@@ -67,7 +67,7 @@ function compare(event) {
         }
 
     }
-    // Question Index determines number question user is on
+    //  Determines number question user is on
     questionIndex++;
 
     if (questionIndex >= questions.length) {
@@ -80,7 +80,7 @@ function compare(event) {
     questionsDiv.appendChild(createDiv);
 
 }
-// All done will append last page
+//  will append last page
 function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
