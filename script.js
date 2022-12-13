@@ -1,7 +1,7 @@
 // Created variables for questions
 var questions = [
     {
-        title: "Commonly used data types DO NOT include:",
+        title: "Common used data types DO NOT include:",
         choices: ["strings", "booleans", "alerts", "numbers"],
         answer: "alerts"
     },
@@ -60,9 +60,11 @@ timer.addEventListener("click", function () {
 
 // Renders questions and choices on page: 
 function render(questionIndex)  
-    // Clears existing data 
+    
+// Clears existing data 
     questionsDiv.innerHTML = "";
     ulCreate.innerHTML = "";
+   
     // For loops to loop through all info in array
     for (var i = 0; i < questions.length; i++) {
         // Appends question title only
