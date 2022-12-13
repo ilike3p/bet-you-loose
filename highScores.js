@@ -1,5 +1,5 @@
 
-//Historical High Scores
+//Prior High Scores
 
 // Declared variables
 var highScore = document.querySelector("#highScore");
@@ -26,7 +26,7 @@ if (allScores !== null) {
 
     }
 }
-// Event listener to move to index page
+// Event listener to move to homepage
 goBack.addEventListener("click", function () {
     window.location.replace("./index.html");
 });

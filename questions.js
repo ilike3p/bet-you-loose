@@ -1,3 +1,5 @@
+//Renamed file to ensure better function
+
 // Var with array and object for questions 
 var questions = [
     {
@@ -31,7 +33,7 @@ var questions = [
 var score = 0;
 var questionIndex = 0;
 
-// Start working code 
+// Application start 
 // Declared variables
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
