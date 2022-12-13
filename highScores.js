@@ -1,5 +1,5 @@
 
-//Prior High Scores
+//Link to HighScores
 
 // Declared variables
 var highScore = document.querySelector("#highScore");
@@ -12,6 +12,7 @@ clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 });
+
 // Retreives local stroage 
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);

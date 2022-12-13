@@ -1,6 +1,6 @@
 //Renamed file to ensure better function
 
-// Var with array and object for questions 
+// Var with arrays and objects for quiz 
 var questions = [
     {
         title: "Commonly used data types DO NOT include:",
@@ -46,7 +46,7 @@ var secondsLeft = 76;
 var holdInterval = 0;
 // Holds penalty time
 var penalty = 10;
-// Creates new element
+// new element
 var ulCreate = document.createElement("ul");
 
 // Triggers timer on button, shows user a display on the screen
