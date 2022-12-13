@@ -1,7 +1,7 @@
-// Created variables for questions
+// Var with array and object for questions 
 var questions = [
     {
-        title: "Common used data types DO NOT include:",
+        title: "Commonly used data types DO NOT include:",
         choices: ["strings", "booleans", "alerts", "numbers"],
         answer: "alerts"
     },
@@ -27,21 +27,28 @@ var questions = [
     },
 
 ];
-
 // Declared variables
 var score = 0;
 var questionIndex = 0;
 
-// Start code 
+// Start working code 
 // Declared variables
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
-var wrapper = document.querySelector("#wrappers");
+var wrapper = document.querySelector("#wrapper");
 
-// Activates timer on button, shows user a display on the screen
+// Seconds left is 15 seconds per question:
+var secondsLeft = 76;
+// Holds interval time
+var holdInterval = 0;
+// Holds penalty time
+var penalty = 10;
+// Creates new element
+var ulCreate = document.createElement("ul");
+
+// Triggers timer on button, shows user a display on the screen
 timer.addEventListener("click", function () {
-    
     // We are checking zero because its originally set to zero
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
@@ -58,7 +65,7 @@ timer.addEventListener("click", function () {
     render(questionIndex);
 });
 
-// Renders questions and choices on page: 
+// Renders questions and choices to page: 
 function render(questionIndex) {
     // Clears existing data 
     questionsDiv.innerHTML = "";
@@ -79,7 +86,7 @@ function render(questionIndex) {
         listItem.addEventListener("click", (compare));
     })
 }
-    // Event to compare choices with answer
+// Event to compare choices with answer
 function compare(event) {
     var element = event.target;
 
@@ -93,13 +100,13 @@ function compare(event) {
             createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
             // Correct condition 
         } else {
-            // Incorrect answers will deduct points
+            // Will deduct -5 seconds off secondsLeft for wrong answers
             secondsLeft = secondsLeft - penalty;
             createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
         }
 
     }
-    //  Determines number question user is on
+    // Question Index determines number question user is on
     questionIndex++;
 
     if (questionIndex >= questions.length) {
@@ -112,7 +119,7 @@ function compare(event) {
     questionsDiv.appendChild(createDiv);
 
 }
-//  will append last page
+// All done will append last page
 function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
@@ -140,14 +147,14 @@ function allDone() {
         questionsDiv.appendChild(createP2);
     }
 
-    // Labels
+    // Label
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter your initials: ";
 
     questionsDiv.appendChild(createLabel);
 
-    // inputs
+    // input
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
     createInput.setAttribute("id", "initials");
@@ -163,7 +170,7 @@ function allDone() {
 
     questionsDiv.appendChild(createSubmit);
 
-    // Event listener to save initials into local storage 
+    // Event listener to capture initials and local storage for initials and score
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
@@ -186,10 +193,8 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // link to final page
-            window.location.replace("")
+            // Travels to final page
+            window.location.replace("./highScores.html");
         }
     });
-
-
 }

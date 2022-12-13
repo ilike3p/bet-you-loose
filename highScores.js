@@ -3,6 +3,7 @@
 
 // Declared variables
 var highScore = document.querySelector("#highScore");
+var highScore = document.querySelector("#highScore");
 var clear = document.querySelector("#clear");
 var goBack = document.querySelector("#goBack");
 
@@ -15,7 +16,7 @@ clear.addEventListener("click", function () {
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 
-if (allScores !== null)
+if (allScores !== null) {
 
     for (var i = 0; i < allScores.length; i++) {
 
@@ -24,8 +25,8 @@ if (allScores !== null)
         highScore.appendChild(createLi);
 
     }
-// Event listenter to go to index pg
+}
+// Event listener to move to index page
 goBack.addEventListener("click", function () {
-       window.location.replace("index.html")
-
+    window.location.replace("./index.html");
 });
