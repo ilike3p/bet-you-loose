@@ -1,6 +1,6 @@
 //Renamed file to ensure better function
 
-// Var with arrays and objects for quiz 
+// Variable with arrays and objects for the quiz
 var questions = [
     {
         title: "Commonly used data types DO NOT include:",
