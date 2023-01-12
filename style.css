@@ -1,11 +1,10 @@
 
         #wrapper {
-            position: relative;
+            position:relative;
             left: 30%;
             top: 20%;
             width: 500px;
             height: 500px;
-            border: 1px solid rgb(58, 128, 0);
         }
         #startTime {
             background-color: rgb(58, 128, 0);
@@ -20,6 +19,7 @@
 
         #currentTime {
             float: right;
+            border: black;
         }
 
         #goBack {
@@ -46,7 +46,7 @@
             text-align: center;
         }
         button {
-            background-color: aqua;
+            background-color: rgb(245, 234, 19);
             border-radius: 8px;
 
         }
@@ -91,6 +91,8 @@
             border-top: 1px solid lightgray;
         }
 
+
+
         /* Start media queries */
 @media screen and (max-width: 786px) {
     /* Resized content to fit 786px  */
@@ -99,7 +101,7 @@
         }
     /* Resized main-content to fit 786px  */
     #wrapper {
-        position: absolute;
+        position: relative;
         left: 20%;
     }
 
