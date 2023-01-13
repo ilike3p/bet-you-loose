@@ -1,5 +1,5 @@
 # bet-you-loose
-- http://127.0.0.1:5500/bet-you-loose/index.html
+- https://ilike3p.github.io/bet-you-loose/
 
 #User Story
 
