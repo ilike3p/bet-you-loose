@@ -2,28 +2,30 @@
         #wrapper {
             position:relative;
             left: 30%;
-            top: 20%;
+            top: 30%;
             width: 500px;
             height: 500px;
+            font-size: larger;
         }
         #startTime {
-            background-color: rgb(58, 128, 0);
+            background-color: rgb(240, 72, 20);
             margin-left: 33%;
             padding: 15px 32px;
             font-size: 20px;
             color: white;
         }
         #questionsDiv {
-            margin: 20px;
+            margin: 50px;
+            font-size: medium;
         }
 
         #currentTime {
             float: right;
-            border: black;
+            border: rgb(240, 72, 20);
         }
 
         #goBack {
-            background-color: rgb(58, 128, 0);
+            background-color: rgb(240, 72, 20);
             position: relative;
             padding: 10px;
             font-size: 20px;
@@ -36,28 +38,28 @@
         }
 
         #clear {
-            background-color: rgb(58, 128, 0);
+            background-color: rgb(240, 72, 20);
             position: relative;
             padding: 10px;
             font-size: 20px;
             color: white;
             top: 30%;
-            right: 5%;
-            text-align: center;
+            right: 30%;
+            text-align: relative;
         }
         button {
-            background-color: rgb(245, 234, 19);
+            background-color: rgb(245, 244, 239);
             border-radius: 8px;
 
         }
 
         textarea {
-            width: 90%;
+            width: 50%;
             margin: 20px;
         }
 
         #Submit {
-            background-color: rgb(58, 128, 0);
+            background-color: rgb(240, 72, 20);
             margin-left: 33%;
             padding: 15px 32px;
             font-size: 20px;
@@ -67,6 +69,7 @@
         label {
             margin-right: 10px;
         }
+
         input {
             margin-bottom: 20px;
             width: 50%;
@@ -78,7 +81,7 @@
         }
 
         li {
-            background-color: rgb(58, 128, 0);
+            background-color: rgb(240, 72, 20);
             margin-top: 10px;
             padding: 5px 15px;
             width: 80%;
@@ -105,9 +108,6 @@
         left: 20%;
     }
 
-    a {
-        margin-left: 20%;
-    }
         #goBack {
             
             position: relative;
