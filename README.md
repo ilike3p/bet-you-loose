@@ -23,5 +23,5 @@ THEN the game is over
 -WHEN the game is over
 THEN I can save my initials and score
 
-![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/macbookpro/Desktop/Screenshot%202023-01-12%20at%206.52.22%20PM.png?version%3D1673578361737)
+
 
